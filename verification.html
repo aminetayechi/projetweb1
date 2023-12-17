@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vérification d'accès</title>
+</head>
+<body>
+
+    <h1>Vérification d'accès</h1>
+    <p>Veuillez saisir votre e-mail pour accéder à cette page :</p>
+
+    <input type="email" id="emailInput" placeholder="Entrez votre e-mail">
+    <button onclick="verifierEmail()">Accéder</button>
+
+    <script>
+        function verifierEmail() {
+            var email = document.getElementById("emailInput").value;
+            if (email === "tayechiminou7@gmail.com") {
+                window.location.href = "index.html";
+            } else {
+                alert("Accès refusé. Veuillez saisir l'e-mail correct.");
+            }
+        }
+    </script>
+</body>
+</html>
